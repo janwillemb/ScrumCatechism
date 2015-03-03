@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrum Catechism</title>
+<!-- this document was originally created with markdownpad, but edited later to add a TOC -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Author" content="Jan Willem Boer" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+/*  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace; */
+font-family: Helvetica, arial, freesans, clean, sans-serif;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  /*white-space: nowrap;*/
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+  background: transparent;
+  
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+
+/* CUSTOM
+====================*/
+
+#toc {
+	color: Grey;
+}
+#colofon {
+	text-align: right;
+	color: Grey;
+	font-size: smaller;
+}
+.tocLevel1 {
+}
+.tocLevel2 {
+	padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Scrum Catechism</h1>
+<p id="toc">
+Building table of contents...
+</p>
+<h1>Theory</h1>
+<p>What is Scrum?</p>
+<pre><code>A framework for productively and creatively developing and sustaining complex products with the highest possible value
+</code></pre>
+
+<p>Is Scrum simple to implement?</p>
+<pre><code>No
+</code></pre>
+
+<p>How is scrum empirical?</p>
+<pre><code>It employs an iterative, incremental approach to optimize predictability and control risk.
+</code></pre>
+
+<p>Which are the three pillars of empirical process control?</p>
+<pre><code>TIA: Transparency, Inspection, Adaption.
+</code></pre>
+
+<p>How is transparancy guaranteed within scrum?</p>
+<pre><code>- Common language about the process 
+- Clear Definition of Done.
+</code></pre>
+
+<p>How is inspection implemented within scrum?</p>
+<pre><code>Frequent but not too frequent inspections of scrum artifacts and progress towared a Sprint Goal to detect undesirable variances.
+</code></pre>
+
+<p>How is adaption implemented within scrum?</p>
+<pre><code>As soon as an undesirable variance is detected, the process or material being processed is adapted to minimize further deviation.
+</code></pre>
+
+<h1>Roles</h1>
+<h2>The Scrum Team</h2>
+<p>Who are the members of a scrum team?</p>
+<pre><code>Product Owner, Scrum Master, Development Team
+</code></pre>
+
+<p>What are two important characteristics of Scrum Teams?</p>
+<pre><code>Self-organized, cross-functional.
+</code></pre>
+
+<p>How is a Scrum Team self-organized?</p>
+<pre><code>Not being directed by others
+They choose how best to accomplish their work.
+</code></pre>
+
+<p>What is the value of being cross-functional as a Scrum Team?</p>
+<pre><code>Not depending on others to accomplish the work
+</code></pre>
+
+<p>What is the output of a Scrum Team?</p>
+<pre><code>Iteratively and incrementally delivered products that are 'Done' (a useful and working product)
+</code></pre>
+
+<p>What is the value of iteratively and incrementally deliveries?</p>
+<pre><code>Frequent inspection possibilities
+</code></pre>
+
+<h2>The Product Owner</h2>
+<p>What is the main responsibility of the Product Owner?</p>
+<pre><code>Maximizing the value of the product and providing work for the Development Team.
+</code></pre>
+
+<p>What is his main instrument to this purpose?</p>
+<pre><code>The Product Backlog.
+</code></pre>
+
+<p>Is the Product Backlog a shared responsibility? </p>
+<pre><code>No. He is the sole person responsible.
+</code></pre>
+
+<p>What are characteristics of items on the Product Backlog?</p>
+<pre><code>- transparant, clearly expressed and visible for all
+- Ordered to best achieve goals
+- Optimized to provide value
+</code></pre>
+
+<p>May the P.O. delegate his responsibilities regarding the Product Backlog?</p>
+<pre><code>Yes. However, the P.O. remains accountable.
+</code></pre>
+
+<p>What is an important requirement for the P.O. to succeed</p>
+<pre><code>The organization should respect his decisions.
+</code></pre>
+
+<h2>The Development Team</h2>
+<p>Who will tell the team how to turn Product Backlog items into increments of releasable functionality?</p>
+<pre><code>No one except the Development Team itself.
+</code></pre>
+
+<p>What roles / titles does scrum recognize within a Development Team?</p>
+<pre><code>Only one: 'Developer' for all team members. There are no sub-teams or fixed roles. 
+</code></pre>
+
+<p>Can a person have an area of focus or a specialized skill within a scrum team?</p>
+<pre><code>Of course. But accountability belongs to the Development Team as a whole.
+</code></pre>
+
+<p>What is the ideal size of the Development Team?</p>
+<pre><code>3 &lt;= teamsize &lt;= 9. P.O. and S.M. are included in this count when active in the Dev Team.
+</code></pre>
+
+<h2>The Scrum Master</h2>
+<p>What are the main responsibilities of the Scrum Master?</p>
+<pre><code>- Ensuring that Scrum is understood and enacted. 
+- Optimizes interactions with those outside the Scrum team
+</code></pre>
+
+<p>How does the Scrum Master help the Product Owner?</p>
+<pre><code>- Finding techniques for effective Product Backlog management
+- Helping the Scrum team to clarify PBI's
+- Helping with the empirical planning process
+- Helping the P.O. to order the backlog to maximize value
+- Agility
+- Facilitating Scrum events and ensuring the Scrum Team understand its purpose
+</code></pre>
+
+<p>How does the Scrum Master help the Development Team?</p>
+<pre><code>- Coaching the team to be self-organizing and cross-functional.
+- Helping the team to create high-value products
+- Removing impediments
+- Facilitating Scrum events and ensuring the Development Team understand its purpose
+- Adopting scrum and increasing understanding of scrum
+</code></pre>
+
+<p>How does the Scrum Master help the organization</p>
+<pre><code>- Leading and coaching in adapting Scrum
+- Causing productivity increasing changes
+- Working with other scrum masters to increase effectiveness of scrum
+</code></pre>
+
+<h1>Scrum Events</h1>
+<p>What events does Scrum define?</p>
+<pre><code>The Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective.
+</code></pre>
+
+<p>What is an important characteristic of Scrum events?</p>
+<pre><code>Events are timeboxed
+</code></pre>
+
+<p>Can these events be skipped when the Scrum Team doesn't deem the events necessary?</p>
+<pre><code>No. Transparency will be reduced and an important opportunity to inspect and adapt is lost.
+</code></pre>
+
+<h2>The Sprint</h2>
+<p>What is the maximum timebox of a sprint?</p>
+<pre><code>A month
+</code></pre>
+
+<p>What is the output of a sprint</p>
+<pre><code>A potentially shippable product increment
+</code></pre>
+
+<p>What does a sprint contain and consist of?</p>
+<pre><code>All other Events and the development work.
+</code></pre>
+
+<p>What is fixed within the sprint</p>
+<pre><code>The sprint goal, the quality goals
+</code></pre>
+
+<p>What is flexible within the sprint</p>
+<pre><code>The scope and the plan to reach the goal
+</code></pre>
+
+<p>When can a sprint be cancelled and by who?</p>
+<pre><code>The P.O. can cancel a sprint if it is obsolete. Avoid this.
+</code></pre>
+
+<h2>Sprint Planning</h2>
+<p>What is the maximum timebox of the Sprint Planning?</p>
+<pre><code>8 hours for a one month sprint.
+</code></pre>
+
+<p>What are the two questions the Sprint Planning answers?</p>
+<pre><code>- What can be delivered in this Sprint
+- How is this achieved.
+</code></pre>
+
+<p>Who defines the Sprint Goal</p>
+<pre><code>- The Scrum Team
+</code></pre>
+
+<p>What is input to this meeting?</p>
+<pre><code>- The latest increment
+- Projected capacity of the Dev Team
+- Past performance of the Dev Team
+</code></pre>
+
+<p>Who selects the number of items from the Product Backlog?</p>
+<pre><code>The Development Team
+</code></pre>
+
+<p>What is the main reason for a Sprint Goal?</p>
+<pre><code>To provide the Why
+</code></pre>
+
+<p>How is determined How the Product Backlog items will be turned into a working product?</p>
+<pre><code>The development team starts breaking down and designing the items into work units
+</code></pre>
+
+<p>Should all PBI's be broken down into tasks?</p>
+<pre><code>No, only a few to ensure the first few days of the sprint can be productive.
+</code></pre>
+
+<p>What does the team do if it has too much or too little?</p>
+<pre><code>Negotiate with the P.O., invite others for advice
+</code></pre>
+
+<p>What should the Development Team be able to do at the end of the Sprint Planning?</p>
+<pre><code>Explain to the P.O. and S.M. how the work will be done to accomplish the goal and increment.
+</code></pre>
+
+<p>Why is the  Sprint Goal important?</p>
+<pre><code>It allows the Dev Team to negotiate the scope of the Sprint Backlog within the sprint with the P.O.
+</code></pre>
+
+<h2>Daily Scrum</h2>
+<p>What is the timebox for the daily scrum?</p>
+<pre><code>15 minutes
+</code></pre>
+
+<p>What is the goal of the daily scrum?</p>
+<pre><code>To synchronize activities and create a forecast for the next day.
+</code></pre>
+
+<p>How is this typically done?</p>
+<pre><code>By the three questions: What did I do yesterday towards the Sprint Goal? What will i do today for the Sprint Goal? Are there any impediments?
+</code></pre>
+
+<p>Can the Development Team discuss details?</p>
+<pre><code>Yes, but often this is done after the Daily Scrum
+</code></pre>
+
+<p>May others apart from the Dev Team participate in the Daily Scrum?</p>
+<pre><code>No
+</code></pre>
+
+<h2>Sprint Review</h2>
+<p>What is the timebox of the Sprint Review?</p>
+<pre><code>4 hours for a month-length sprint
+</code></pre>
+
+<p>What is the purpose of the Sprint Review?</p>
+<pre><code>Inspect the increment; adapt the Product Backlog to maximize value
+</code></pre>
+
+<p>Who will participate in the Sprint Review?</p>
+<pre><code>The Scrum Team and the stakeholders
+</code></pre>
+
+<p>What is the role of the Product Owner in the Sprint Review?</p>
+<pre><code>Presenting what Product Backlog Items have been Done, and projecting progress in the future, and adjusting the Product Backlog if needed
+</code></pre>
+
+<p>What is the role of the Development Team in the Sprint Review?</p>
+<pre><code>Discuss what went well, and what problems were solved
+Presenting the work that it has Done and answering questions.
+</code></pre>
+
+<p>What is the role of all participants in the Sprint Review?</p>
+<pre><code>Collaborating on what to do next as input for the Sprint Planning
+</code></pre>
+
+<h2>Sprint Retrospective</h2>
+<p>What is the timebox of the Sprint Retrospective?</p>
+<pre><code>3 hours for a one-month Sprint
+</code></pre>
+
+<p>Who participates in the Sprint Retrospective?</p>
+<pre><code>The Scrum Team, as peers
+</code></pre>
+
+<p>What is the main goal of the Sprint Retrospective?</p>
+<pre><code>To create a plan for improvements for the next sprint
+</code></pre>
+
+<p>What areas could improve?</p>
+<pre><code>Effectiveness, enjoyability, product quality.
+</code></pre>
+
+<h1>Scrum Artifacts</h1>
+<h2>Product Backlog</h2>
+<p>What is the main purpose of the Product Backlog</p>
+<pre><code>To be the single source of requirements for any changes to be made to a product
+</code></pre>
+
+<p>Who is responsible for the PB?</p>
+<pre><code>The P.O.
+</code></pre>
+
+<p>What are attributes of all Product Backlog Items?</p>
+<pre><code>- description
+- order
+- estimate
+- value
+</code></pre>
+
+<p>How is the backlog maintained</p>
+<pre><code>By Product Backlog refinement
+</code></pre>
+
+<p>Who is doing this?</p>
+<pre><code>The Development Team and the Product Owner
+</code></pre>
+
+<p>When is a Product Backlog Item 'Ready' for selection in a Sprint Planning?</p>
+<pre><code>When it can be 'Done' within a sprint.
+</code></pre>
+
+<p>Who is responsible for the estimates?</p>
+<pre><code>The Development Team.
+</code></pre>
+
+<p>How can the Product Backlog be used to monitor progress towards a goal?</p>
+<pre><code>By projecting the estimates of what has happened in the past on the future
+</code></pre>
+
+<h2>Sprint Backlog</h2>
+<p>What is the Sprint Backlog?</p>
+<pre><code>A forecast of the Development Team of what functionality will be available in the next increment and what work needs to be done to accomplish this.
+</code></pre>
+
+<p>Who is responsible for the Sprint Backlog?</p>
+<pre><code>The Development Team.
+</code></pre>
+
+<p>Is the Sprint Backlog fixed?</p>
+<pre><code>No, the Development Team modifies it as needed during the sprint.
+</code></pre>
+
+<p>How can the Sprint Backlog be used to monitor progress towared the Sprint Goal?</p>
+<pre><code>Remaining work is tracked. 
+</code></pre>
+
+<h2>Increment</h2>
+<p>What is the increment?</p>
+<pre><code>Sum of all PBI's completed during a Sprint and the value of the increments of all previous Sprints.
+</code></pre>
+
+<h2>Artifact Transparency</h2>
+<p>Who should monitor and enforce transparency?</p>
+<pre><code>The Scrum Master
+</code></pre>
+
+<p>Why is transparency important?</p>
+<pre><code>Decisions will be flawed if transparency is less
+</code></pre>
+
+<p>How is transparency about 'Done' achieved?</p>
+<pre><code>By defining a shared understanding of 'Done' per Scrum Team. (Definition of Done)
+</code></pre>
+
+<p id="colofon">
+Jan Willem Boer, februari 2015, based on the <a href='http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-US.pdf#zoom=100'>official Scrum Guide</a>
+</p>
+<script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script>
+	var toc = $('#toc');
+	toc.html('');
+	$('h1,h2').each(function(index, item) {
+		if (index === 0) {
+			return;
+		}
+		var h = $(item);
+		var level = '1';
+		if (item.nodeName === 'H2' || item.nodeName === 'h2') {
+			level = '2';
+		}
+		h.wrap('<a name="' + h.text() + '"></a>');
+		toc.append('<a class="tocLevel' + level + '" href="#' + h.text() + '">' + h.text() + '</a><br/>');
+	});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
